@@ -1,6 +1,13 @@
 import { useCallback, useEffect, useState, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 
+/**
+ * 实践总结
+ * 在 useEffect 中使用了 state 和 props 都要声明依赖数组
+ * 在 useEffect 中更新 state 的时候，可以通过函数式更新
+ * 在 useEffect 中使用回调函数，要配合 useCallback，(1、声明依赖数组，重复的绑定新回调函数有可能造成性能浪费 2、因此可以利用useRef产生一个稳定的闭包引用)
+ *
+ */
 export default function EventListener() {
   const [count, setCount] = useState(0)
 
