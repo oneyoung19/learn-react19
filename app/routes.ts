@@ -6,5 +6,6 @@ export default [
     index('pages/dashboard/_index.tsx'),
     route('about', 'pages/dashboard/about.tsx'),
     route('settings', 'pages/dashboard/settings.tsx')
-  ])
+  ]),
+  route('hooks', 'pages/hooks/index.tsx')
 ] satisfies RouteConfig
