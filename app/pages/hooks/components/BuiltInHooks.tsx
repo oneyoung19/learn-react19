@@ -24,6 +24,7 @@ export function BuiltInHooks() {
   const [count, setCount] = useState(0)
   const handleIncrement = () => {
     setCount(count + 1)
+    console.log('handleIncrement')
   }
   return (
     <div>
