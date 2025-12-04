@@ -1,11 +1,11 @@
-import type { Route } from "./+types/dashboard";
-import { Link, Outlet } from "react-router";
+import type { Route } from './+types/dashboard'
+import { Link, Outlet } from 'react-router'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Dashboard - React Router App" },
-    { name: "description", content: "Dashboard page" },
-  ];
+    { title: 'Dashboard - React Router App' },
+    { name: 'description', content: 'Dashboard page' }
+  ]
 }
 
 export default function Dashboard() {
@@ -17,24 +17,21 @@ export default function Dashboard() {
           <li>
             <Link
               to="/dashboard"
-              className="px-4 py-2 hover:underline"
-            >
+              className="px-4 py-2 hover:underline">
               概览
             </Link>
           </li>
           <li>
             <Link
               to="/dashboard/about"
-              className="px-4 py-2 hover:underline"
-            >
+              className="px-4 py-2 hover:underline">
               关于
             </Link>
           </li>
           <li>
             <Link
               to="/dashboard/settings"
-              className="px-4 py-2 hover:underline"
-            >
+              className="px-4 py-2 hover:underline">
               设置
             </Link>
           </li>
@@ -44,6 +41,5 @@ export default function Dashboard() {
         <Outlet />
       </div>
     </div>
-  );
+  )
 }
-

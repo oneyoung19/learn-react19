@@ -1,10 +1,10 @@
-import type { Route } from "../+types/dashboard.settings";
+import type { Route } from '../+types/dashboard.settings'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "设置 - Dashboard" },
-    { name: "description", content: "设置页面" },
-  ];
+    { title: '设置 - Dashboard' },
+    { name: 'description', content: '设置页面' }
+  ]
 }
 
 export default function DashboardSettings() {
@@ -15,6 +15,5 @@ export default function DashboardSettings() {
         这是 Dashboard 的设置页面，展示嵌套路由的使用。
       </p>
     </div>
-  );
+  )
 }
-

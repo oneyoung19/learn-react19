@@ -1,10 +1,10 @@
-import type { Route } from "./+types/_index";
+import type { Route } from './+types/_index'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "概览 - Dashboard" },
-    { name: "description", content: "Dashboard 概览页面" },
-  ];
+    { title: '概览 - Dashboard' },
+    { name: 'description', content: 'Dashboard 概览页面' }
+  ]
 }
 
 export default function DashboardIndex() {
@@ -15,6 +15,5 @@ export default function DashboardIndex() {
         这是 Dashboard 的默认页面，当访问 /dashboard 时显示。
       </p>
     </div>
-  );
+  )
 }
-

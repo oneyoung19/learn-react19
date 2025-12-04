@@ -1,10 +1,10 @@
-import type { Route } from "./+types/about";
+import type { Route } from './+types/about'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "关于 - Dashboard" },
-    { name: "description", content: "关于页面" },
-  ];
+    { title: '关于 - Dashboard' },
+    { name: 'description', content: '关于页面' }
+  ]
 }
 
 export default function DashboardAbout() {
@@ -15,6 +15,5 @@ export default function DashboardAbout() {
         这是 Dashboard 的关于页面，展示嵌套路由的使用。
       </p>
     </div>
-  );
+  )
 }
-
