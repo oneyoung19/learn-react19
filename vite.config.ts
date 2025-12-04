@@ -14,7 +14,7 @@ export default defineConfig({
   },
   // [The requested module 'react-use' is a CommonJS module, which may not support all module.exports as named exports.](https://github.com/streamich/react-use/issues/2353#issuecomment-2044683620)
   ssr: {
-    noExternal: ['react-use']
+    noExternal: ['react-use', 'ahooks']
   },
   optimizeDeps: {
     include: ['react-use']
