@@ -1,0 +1,11 @@
+node_modules
+build
+.react-router
+dist
+*.lock
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.DS_Store
+*.log
+
