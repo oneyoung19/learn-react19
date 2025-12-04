@@ -3,13 +3,16 @@ import { Button } from '@/components/ui/button'
 import { useSessionStorage } from 'react-use'
 import { useSessionStorageState as useAhooksSessionStorage } from 'ahooks'
 
+/**
+ * react-use 和 ahooks 的 storage 对比
+ * react-use 没有做storagechange事件绑定 官方仓库提了一些相关Issues 但目前看是不维护了
+ * ahooks默认不开启storagechange事件绑定 可设置listenStorageChange: true开启
+ */
 export function OpensourceHooks() {
   return (
     <div>
       <h2>Opensource Hooks</h2>
-      {/* react-use */}
-      {/* ahooks */}
-      <div>
+      <div className="w-[50%]">
         <ClientA></ClientA>
         <ClientB></ClientB>
       </div>
@@ -25,7 +28,7 @@ function ClientA() {
     listenStorageChange: true
   })
   return (
-    <div className="flex align-center gap-2">
+    <div className="flex align-center gap-2 mb-2">
       <Input
         value={value}
         onChange={e => setValue(e.target.value)}
@@ -56,7 +59,7 @@ function ClientB() {
   }
   return (
     <>
-      <div className="flex align-center gap-2">
+      <div className="flex align-center gap-2 mb-2">
         <Input
           value={value}
           onChange={e => setValue(e.target.value)}
